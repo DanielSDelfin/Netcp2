@@ -1,0 +1,29 @@
+﻿@model Netcp2.Models.CardModel
+
+@{
+    ViewData["Title"] = "Detalhes da Carta";
+}
+
+<div class="card" style="width:50rem;">
+    <div class="card-body d-flex flex-row">
+        <img src="https://cards.scryfall.io/large/front/7/b/7baf9549-1869-4bd3-a52a-2f0b30ba0b16.jpg?1714487768" alt="Alternate Text" class="mr-3" style="width: 400px; height: auto;" />
+        <div style="margin-left:50px">
+            <div>
+                <h5 class="card-title">@Model.Name</h5>
+                <hr />
+            </div>
+            <div>
+                <h6 class="card-subtitle mb-2 text-muted">@Model.Type</h6>
+                <hr />
+            </div>
+            <div>
+                <p class="card-text">@Model.Text</p>
+                <hr />
+            </div>
+            <div>
+                <p class="card-text">Stats: @Model.Stats</p>
+                <hr />
+            </div>
+        </div>
+    </div>
+</div>
